@@ -6,7 +6,9 @@
 * The goal is to find all .txt files in the initial directory and its subdirectory.
 ### Executing program
 * In order to run the program, put the following command in the terminal:  <br>
-` python3 HW2-1.py -t <path_to_testcase0X> -r <path_to_ans0X> -s <"bfs"|"dfs">`
+`python3 HW2-1.py -t <path_to_testcase0X> -r <path_to_ans0X> -s <"bfs"|"dfs">` <br>
+* If you had any problems with executing HW2-1.py, run this:  <br>
+`python3 HW2-1.py -h`
 ```
 import argparse
 import os
