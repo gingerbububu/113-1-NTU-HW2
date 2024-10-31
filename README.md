@@ -9,7 +9,7 @@
 * In order to run the program, execute with command line:  <br>
 `python3 HW2-1.py -t <path_to_testcase0X> -r <path_to_ans0X> -s <"bfs"|"dfs">`  <br>
 * Path to result file (-r) and selective search method (-s) are required args
-* Default path to test file is set as "./testcase00/"
+* Default path to test file is set as "./testcase00"
 * No default value for path to result and selective search method
 * If you had any problems with the parameters, run this:  <br>
 `python3 HW2-1.py -h`  <br>
@@ -65,7 +65,7 @@ def dfs_find_txt(test_dir):
 ```
 parser = argparse.ArgumentParser(prog='HW2-1.py')
 
-parser.add_argument("-t", "--test", default="./testcase00/", required=False, help="path to test directory") #add arguments as requirement in homework
+parser.add_argument("-t", "--test", default="./testcase00", required=False, help="path to test directory") #add arguments as requirement in homework
 parser.add_argument("-r", "--result", required=True, help="path to result file") #reference: https://docs.python.org/3/library/argparse.html
 parser.add_argument("-s", "--search", required=True, choices=["bfs", "dfs"], help="selective search method") 
 args = parser.parse_args()
